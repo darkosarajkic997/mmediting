@@ -28,7 +28,7 @@
 
 [📘Documentation](https://mmediting.readthedocs.io/en/latest/) |
 [🛠️Installation](https://mmediting.readthedocs.io/en/latest/install.html) |
-[👀Model Zoo](https://mmediting.readthedocs.io/en/latest/modelzoo.html) |
+[👀Model Zoo](https://mmediting.readthedocs.io/en/latest/_tmp/modelzoo.html) |
 [🆕Update News](https://github.com/open-mmlab/mmediting/blob/master/docs/en/changelog.md) |
 [🚀Ongoing Projects](https://github.com/open-mmlab/mmediting/projects) |
 [🤔Reporting Issues](https://github.com/open-mmlab/mmediting/issues)
@@ -39,17 +39,22 @@
 
 English | [简体中文](/README_zh-CN.md)
 
-MMEditing is an open source image and video editing toolbox based on PyTorch. It is a part of the [OpenMMLab](https://open-mmlab.github.io/) project.
+MMEditing is an open-source image and video editing toolbox based on PyTorch. It is a part of the [OpenMMLab](https://openmmlab.com/) project.
+
+Currently, MMEditing support the following tasks:
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/12756472/158984079-c4754015-c1f6-48c5-ac46-62e79448c372.jpg"/>
+</div>
 
 The master branch works with **PyTorch 1.5+**.
 
-<div align="center">
-  <img src="resources/mmediting-demo.jpg"/>
-</div>
+Some Demos:
 
-<div align="center">
-<video src="https://user-images.githubusercontent.com/56712176/153550102-fdbd3ac8-cd20-416c-a5dc-4dbfbb97fdaa.mp4" width="520px" height="220px"/>
-</div>
+https://user-images.githubusercontent.com/12756472/158972852-be5849aa-846b-41a8-8687-da5dee968ac7.mp4
+
+https://user-images.githubusercontent.com/12756472/158972813-d8d0f19c-f49c-4618-9967-52652726ef19.mp4
+
 
 ### Major features
 
@@ -82,7 +87,34 @@ Please refer to [changelog.md](docs/en/changelog.md) for details and release his
 
 ## Installation
 
-Please refer to [install.rst](docs/en/install.rst) for installation.
+MMEditing depends on [PyTorch](https://pytorch.org/) and [MMCV](https://github.com/open-mmlab/mmcv).
+Below are quick steps for installation.
+
+**Step 1.**
+Install PyTorch following [official instructions](https://pytorch.org/get-started/locally/), e.g.
+
+```
+pip3 install torch torchvision
+```
+
+**Step 2.**
+Install MMCV with [MIM](https://github.com/open-mmlab/mim).
+
+```
+pip3 install openmim
+mim install mmcv-full
+```
+
+**Step 3.**
+Install MMEditing from source.
+
+```
+git clone https://github.com/open-mmlab/mmediting.git
+cd mmediting
+pip3 install -e .[all]
+```
+
+Please refer to [install.md](docs/en/install.rst) for more detailed instruction.
 
 ## Getting Started
 
@@ -154,7 +186,7 @@ Supported algorithms:
 
 </details>
 
-Please refer to [model_zoo](https://mmediting.readthedocs.io/en/latest/modelzoo.html) for more details.
+Please refer to [model_zoo](https://mmediting.readthedocs.io/en/latest/_tmp/modelzoo.html) for more details.
 
 ## Contributing
 
